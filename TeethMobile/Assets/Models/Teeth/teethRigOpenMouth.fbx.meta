@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: 036467a84a5538a4890857784ad9bd99
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 4781951162920444690
+    second: Armature|ArmatureAction
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GumsMaterial
+    second: {fileID: 2100000, guid: 1c9f829fe970ce34e8053aa91adea762, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TeethMaterial
+    second: {fileID: 2100000, guid: 1c9f829fe970ce34e8053aa91adea762, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'RightUpperLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: teethRigOpenMouth(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Gums
+      parentName: teethRigOpenMouth(Clone)
+      position: {x: -0, y: 0.00000011920929, z: -0.0000004172325}
+      rotation: {x: 0.00000013411045, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Armature
+      parentName: teethRigOpenMouth(Clone)
+      position: {x: -0, y: 0.7771085, z: -4.1201415}
+      rotation: {x: 0.23790574, y: -0, z: -0, w: 0.97128826}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Bone
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.0052167773, y: -0.0064030476, z: -0.002386863, w: 0.9999631}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DownTeeth
+      parentName: Bone
+      position: {x: -0.00052999996, y: 0.055255286, z: -0.0023007186}
+      rotation: {x: -0.22625706, y: -0.34657294, z: 0.6372448, w: 0.6500877}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Teeth.018
+      parentName: DownTeeth
+      position: {x: 0.035890725, y: 0.016072996, z: -0.043676894}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.019
+      parentName: DownTeeth
+      position: {x: 0.03429165, y: 0.012318897, z: -0.030028267}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.020
+      parentName: DownTeeth
+      position: {x: 0.031839106, y: 0.0089439005, z: -0.015095977}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.021
+      parentName: DownTeeth
+      position: {x: -0.034654472, y: 0.016078165, z: -0.04362778}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.022
+      parentName: DownTeeth
+      position: {x: -0.033226695, y: 0.012341213, z: -0.029995583}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.023
+      parentName: DownTeeth
+      position: {x: -0.030779395, y: 0.009096965, z: -0.0151599785}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.024
+      parentName: DownTeeth
+      position: {x: -0.027201612, y: 0.0058239554, z: -0.0018874067}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.025
+      parentName: DownTeeth
+      position: {x: -0.024647824, y: 0.0029024512, z: 0.008431255}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.026
+      parentName: DownTeeth
+      position: {x: -0.019719686, y: 0.0011443913, z: 0.018413}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.027
+      parentName: DownTeeth
+      position: {x: -0.011566109, y: 0.00003923554, z: 0.023444109}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.028
+      parentName: DownTeeth
+      position: {x: 0.028335486, y: 0.005861759, z: -0.0018894285}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.029
+      parentName: DownTeeth
+      position: {x: 0.02580131, y: 0.0028765493, z: 0.008490192}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.030
+      parentName: DownTeeth
+      position: {x: 0.02078318, y: 0.0010845196, z: 0.018458586}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.031
+      parentName: DownTeeth
+      position: {x: 0.012554716, y: 0.00017839561, z: 0.023169793}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.032
+      parentName: DownTeeth
+      position: {x: 0.0046863607, y: -0.000045068817, z: 0.025043411}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.033
+      parentName: DownTeeth
+      position: {x: -0.0035352923, y: 0.000000001869987, z: 0.025180435}
+      rotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone_end
+      parentName: Bone
+      position: {x: -0, y: 0.075133145, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.001
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.49674863, y: 5.1922026e-25, z: 6.4804365e-18, w: 0.8678945}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: UpTeeth
+      parentName: Bone.001
+      position: {x: -0.00052999996, y: 0.051811874, z: 0.009496024}
+      rotation: {x: -0.14339426, y: 0.19607821, z: 0.245655, w: 0.938427}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Teeth.002
+      parentName: UpTeeth
+      position: {x: -0.005245056, y: 0.0000000012742611, z: 0.028614653}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.003
+      parentName: UpTeeth
+      position: {x: 0.006426198, y: 0.00009714254, z: 0.028613882}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.004
+      parentName: UpTeeth
+      position: {x: 0.016024657, y: 0.00010727041, z: 0.025723971}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.005
+      parentName: UpTeeth
+      position: {x: -0.0148833105, y: -0.00016282921, z: 0.025775699}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.006
+      parentName: UpTeeth
+      position: {x: -0.022222292, y: 0.0012033853, z: 0.019199781}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.007
+      parentName: UpTeeth
+      position: {x: -0.025133211, y: 0.0015649227, z: 0.008617257}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.008
+      parentName: UpTeeth
+      position: {x: -0.029146018, y: 0.0032323834, z: -0.001620875}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.009
+      parentName: UpTeeth
+      position: {x: -0.03236916, y: 0.005086574, z: -0.013991766}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.010
+      parentName: UpTeeth
+      position: {x: -0.034040283, y: 0.007316397, z: -0.028619155}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.011
+      parentName: UpTeeth
+      position: {x: -0.035116997, y: 0.011136149, z: -0.041851535}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.012
+      parentName: UpTeeth
+      position: {x: 0.023260128, y: 0.0012571914, z: 0.019312553}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.013
+      parentName: UpTeeth
+      position: {x: 0.026221808, y: 0.0016685298, z: 0.008570383}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.014
+      parentName: UpTeeth
+      position: {x: 0.030242879, y: 0.0032615277, z: -0.0015791613}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.015
+      parentName: UpTeeth
+      position: {x: 0.033454835, y: 0.0052152243, z: -0.013922014}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.016
+      parentName: UpTeeth
+      position: {x: 0.035109878, y: 0.0072962367, z: -0.028602026}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Teeth.017
+      parentName: UpTeeth
+      position: {x: 0.03620266, y: 0.011203993, z: -0.041889172}
+      rotation: {x: 0.000000059604645, y: -7.8062934e-33, z: 2.4651903e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.001_end
+      parentName: Bone.001
+      position: {x: -0, y: 0.08104065, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
