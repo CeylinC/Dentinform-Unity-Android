@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 879, y: 492}
-  m_MaxSize: {x: 16004, y: 14042}
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 83
+  controlID: 65
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1058
     height: 731
-  m_MinSize: {x: 603, y: 492}
-  m_MaxSize: {x: 12003, y: 14042}
+  m_MinSize: {x: 605, y: 492}
+  m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 84
+  controlID: 66
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,10 +170,10 @@ MonoBehaviour:
     y: 0
     width: 1058
     height: 459
-  m_MinSize: {x: 603, y: 221}
-  m_MaxSize: {x: 12003, y: 4021}
+  m_MinSize: {x: 605, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 85
+  controlID: 67
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -487,21 +487,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: cef1ffffecf1fffffaf1ffff04f2ffff14f2ffff60f2ffffccf2ffffecf2fffff6f2fffffcf2ffff08f3ffff72f3ffffe4f3ffff02f4ffff10f4ffff1af4ffff2af4ffff64f4ffff06f6ffff86f6ffffa4f6ffff42f7ffff48f7ffff54f7ffffdcf7fffff0f8ffff0ef9ffff66f9ffff54fbffff323d0000503d00005c3d0000d23e0000b24b000078540000
+      m_ExpandedIDs: deb6fffffcb6ffff06b7ffff0cb7ffff18b7ffffacbaffffcabaffff68bbffff6ebbffff7abbffff54fbffff743d000032ba0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: d8
+        m_OriginalName: d8
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 16334
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -547,9 +547,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 960, y: 465, z: 0}
+    m_Target: {x: 0.09535217, y: -0.26664746, z: -0.18344128}
     speed: 2
-    m_Value: {x: 960, y: 465, z: 0}
+    m_Value: {x: 0.09535217, y: -0.26664746, z: -0.18344128}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -600,9 +600,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1026.7059
+    m_Target: 4.339171
     speed: 2
-    m_Value: 1026.7059
+    m_Value: 4.339171
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -690,22 +690,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Pc\Documents\GitHub\Teeth-Unity-Mobile\TeethMobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 003e0000
-    m_LastClickedID: 15872
-    m_ExpandedIDs: 00000000f23d0000f43d0000f63d0000fe3d000000ca9a3b
+    scrollPos: {x: 0, y: 45}
+    m_SelectedIDs: 24410000
+    m_LastClickedID: 16676
+    m_ExpandedIDs: 00000000184100001a4100001c4100002241000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +733,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f23d0000f43d0000f63d0000
+    m_ExpandedIDs: 00000000184100001a4100001c410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
