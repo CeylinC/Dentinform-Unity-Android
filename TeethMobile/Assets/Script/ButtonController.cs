@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
-    public GameObject infoScreen, mouth, kokluDis, displaybuttonText, infoScreenButton;
+    public GameObject infoScreen, mouth, kokluDis, displayButton, infoScreenButton;
     bool displayMouth = false, YesNo = true;
     public void PlayScene(){
         SceneManager.LoadScene("SampleScene");
@@ -20,14 +20,16 @@ public class ButtonController : MonoBehaviour
         if(displayMouth){
             mouth.SetActive(true);
             kokluDis.SetActive(false);
-            displaybuttonText.GetComponent<TMPro.TextMeshProUGUI>().text = "Dişi Göster";
+            displayButton.transform.GetChild(0).gameObject.SetActive(true); //Tooth
+            displayButton.transform.GetChild(1).gameObject.SetActive(false); //Teeth
             infoScreenButton.SetActive(false);
             displayMouth = false;
         }
         else{
             mouth.SetActive(false);
             kokluDis.SetActive(true);
-            displaybuttonText.GetComponent<TMPro.TextMeshProUGUI>().text = "Ağzı Göster";
+            displayButton.transform.GetChild(1).gameObject.SetActive(true); //Teeth
+            displayButton.transform.GetChild(0).gameObject.SetActive(false); //Tooth
             infoScreenButton.SetActive(true);
             displayMouth = true;
         }
