@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637913419018135744
+      ticks: 637946340844421629
     m_Hash: 1206723745
   m_LockFileStatus:
     m_FilePath: C:/Users/Pc/Documents/GitHub/Teeth-Unity-Mobile/TeethMobile/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637913419564301165
+      ticks: 637946340844421629
     m_Hash: 3682739031
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
