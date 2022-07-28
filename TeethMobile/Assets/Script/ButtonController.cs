@@ -6,31 +6,51 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
-    public GameObject infoScreen, mouth, kokluDis, displaybuttonText;
-    bool displayMouth = false;
+    public GameObject infoScreen, mouth, kokluDis, displayButton, infoScreenButton;
+    bool displayMouth = false, YesNo = true;
     public void PlayScene(){
         SceneManager.LoadScene("SampleScene");
-    }
-    public void InfoScene(){
-        SceneManager.LoadScene("InfoScene");
     }
     public void HomeScene(){
         SceneManager.LoadScene("HomePage");
     }
+    public void WhoContributedScene(){
+        SceneManager.LoadScene("WhoContributed");
+    }
     public void Display(){
+        kokluDis.transform.position = new Vector3(0,0,0);
         infoScreen.SetActive(false);
-        mouth.transform.position = new Vector3(0,0,-2);
         if(displayMouth){
             mouth.SetActive(true);
             kokluDis.SetActive(false);
-            displaybuttonText.GetComponent<TMPro.TextMeshProUGUI>().text = "Dişi Göster";
+            displayButton.transform.GetChild(0).gameObject.SetActive(true); //Tooth
+            displayButton.transform.GetChild(1).gameObject.SetActive(false); //Teeth
+            infoScreenButton.SetActive(false);
             displayMouth = false;
         }
         else{
             mouth.SetActive(false);
             kokluDis.SetActive(true);
-            displaybuttonText.GetComponent<TMPro.TextMeshProUGUI>().text = "Ağzı Göster";
+            displayButton.transform.GetChild(1).gameObject.SetActive(true); //Teeth
+            displayButton.transform.GetChild(0).gameObject.SetActive(false); //Tooth
+            infoScreenButton.SetActive(true);
             displayMouth = true;
         }
+    }
+    public void InfoScreen(){
+        if(YesNo){
+            kokluDis.transform.position = new Vector3(-3,0,0);
+            infoScreen.SetActive(true);
+            YesNo = false;
+        }
+        else{
+            kokluDis.transform.position = new Vector3(0,0,0);
+            infoScreen.SetActive(false);
+            YesNo = true;
+        }
+    }
+
+    public void SocailMedia(string link){
+        Application.OpenURL(link);
     }
 }
