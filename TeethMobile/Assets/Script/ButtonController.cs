@@ -14,6 +14,9 @@ public class ButtonController : MonoBehaviour
     public void HomeScene(){
         SceneManager.LoadScene("HomePage");
     }
+    public void WhoContributedScene(){
+        SceneManager.LoadScene("WhoContributed");
+    }
     public void Display(){
         kokluDis.transform.position = new Vector3(0,0,0);
         infoScreen.SetActive(false);
@@ -45,5 +48,9 @@ public class ButtonController : MonoBehaviour
             infoScreen.SetActive(false);
             YesNo = true;
         }
+    }
+
+    public void SocailMedia(string link){
+        Application.OpenURL(link);
     }
 }

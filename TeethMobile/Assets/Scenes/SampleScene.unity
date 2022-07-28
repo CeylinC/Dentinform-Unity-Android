@@ -323,8 +323,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279963659
-  m_fontColor: {r: 0.043137256, g: 0.0627451, b: 0.105882354, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -457,8 +457,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282529330
-  m_fontColor: {r: 0.19607843, g: 0.21176471, b: 0.25882354, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.21176471, b: 0.25882354, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.04705906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5058824, g: 0.7411765, b: 0.2901961, a: 1}
+  m_Color: {r: 0.882353, g: 0.8862746, b: 0.882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.21176471, b: 0.25882354, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.04705906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1656,7 +1656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.21176471, b: 0.25882354, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.04705906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1769,7 +1769,7 @@ GameObject:
   - component: {fileID: 8562185100133642494}
   - component: {fileID: 12129435334996799}
   m_Layer: 0
-  m_Name: DownTeethRightPremolar.2
+  m_Name: DownTeethLeftPremolar.2
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2138,7 +2138,7 @@ GameObject:
   - component: {fileID: 5761292356595772606}
   - component: {fileID: 558793751815147748}
   m_Layer: 0
-  m_Name: UpTeethRightMolar.3
+  m_Name: UpTeethLeftMolar.3
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2311,7 +2311,7 @@ GameObject:
   - component: {fileID: 414389074189563309}
   - component: {fileID: 905510590829662845}
   m_Layer: 0
-  m_Name: DownTeethRightCanine.1
+  m_Name: DownTeethLeftCanine.1
   m_TagString: Canine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2481,7 +2481,7 @@ GameObject:
   - component: {fileID: 2712308210426853353}
   - component: {fileID: 1124413023281631798}
   m_Layer: 0
-  m_Name: DownTeethRightIncisor.1
+  m_Name: DownTeethLeftIncisor.1
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2624,7 +2624,7 @@ GameObject:
   - component: {fileID: 7488680805030181352}
   - component: {fileID: 1503952677746935693}
   m_Layer: 0
-  m_Name: UpTeethLeftIncisor.2
+  m_Name: UpTeethRightIncisor.2
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2761,7 +2761,7 @@ GameObject:
   - component: {fileID: 5537826076209019510}
   - component: {fileID: 1606609104094790080}
   m_Layer: 0
-  m_Name: DownTeethLeftPremolar.1
+  m_Name: DownTeethRightPremolar.1
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2808,7 +2808,7 @@ GameObject:
   - component: {fileID: 54002730022628954}
   - component: {fileID: 1623703597016297275}
   m_Layer: 0
-  m_Name: DownTeethLeftIncisor.2
+  m_Name: DownTeethRightIncisor.2
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2841,7 +2841,7 @@ GameObject:
   - component: {fileID: 6579592748269126526}
   - component: {fileID: 1666239461978441642}
   m_Layer: 0
-  m_Name: UpTeethRightMolar.2
+  m_Name: UpTeethLeftMolar.2
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3086,7 +3086,7 @@ GameObject:
   - component: {fileID: 3850072378839300006}
   - component: {fileID: 2066998753715974192}
   m_Layer: 0
-  m_Name: DownTeethRightMolar.2
+  m_Name: DownTeethLeftMolar.2
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3284,7 +3284,7 @@ GameObject:
   - component: {fileID: 5896053278961458157}
   - component: {fileID: 2394650288073437826}
   m_Layer: 0
-  m_Name: UpTeethRightIncisor.1
+  m_Name: UpTeethLeftIncisor.1
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3489,7 +3489,7 @@ GameObject:
   - component: {fileID: 1525551345855532912}
   - component: {fileID: 2666610540852743509}
   m_Layer: 0
-  m_Name: UpTeethRightCanine.1
+  m_Name: UpTeethLeftCanine.1
   m_TagString: Canine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3768,7 +3768,7 @@ GameObject:
   - component: {fileID: 5185837232887653325}
   - component: {fileID: 3059220195644139129}
   m_Layer: 0
-  m_Name: DownTeethLeftMolar.1
+  m_Name: DownTeethRightMolar.1
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3877,7 +3877,7 @@ GameObject:
   - component: {fileID: 6892966328505524552}
   - component: {fileID: 3262302226495703326}
   m_Layer: 0
-  m_Name: DownTeethLeftMolar.2
+  m_Name: DownTeethRightMolar.2
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3932,7 +3932,7 @@ GameObject:
   - component: {fileID: 4584459857213939597}
   - component: {fileID: 3334060645719348205}
   m_Layer: 0
-  m_Name: DownTeethLeftIncisor.1
+  m_Name: DownTeethRightIncisor.1
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4006,7 +4006,7 @@ GameObject:
   - component: {fileID: 3658086765640517577}
   - component: {fileID: 3349039179812363408}
   m_Layer: 0
-  m_Name: DownTeethRightMolar.1
+  m_Name: DownTeethLeftMolar.1
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4534,7 +4534,7 @@ GameObject:
   - component: {fileID: 4765164431562563916}
   - component: {fileID: 3900954565689412575}
   m_Layer: 0
-  m_Name: UpTeethRightIncisor.2
+  m_Name: UpTeethLeftIncisor.2
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4567,7 +4567,7 @@ GameObject:
   - component: {fileID: 3347931574837038514}
   - component: {fileID: 3922168715957699788}
   m_Layer: 0
-  m_Name: UpTeethLeftIncisor.1
+  m_Name: UpTeethRightIncisor.1
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4704,7 +4704,7 @@ GameObject:
   - component: {fileID: 3939165615230127041}
   - component: {fileID: 4041101247314526047}
   m_Layer: 0
-  m_Name: DownTeethLeftPremolar.2
+  m_Name: DownTeethRightPremolar.2
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5377,7 +5377,7 @@ GameObject:
   - component: {fileID: 1425982557078376778}
   - component: {fileID: 4905546750403820355}
   m_Layer: 0
-  m_Name: UpTeethLeftMolar.1
+  m_Name: UpTeethRightMolar.1
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5678,7 +5678,7 @@ GameObject:
   - component: {fileID: 8656620903430127762}
   - component: {fileID: 5396268691067500778}
   m_Layer: 0
-  m_Name: DownTeethRightMolar.3
+  m_Name: DownTeethLeftMolar.3
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5756,7 +5756,7 @@ GameObject:
   - component: {fileID: 7668300480169888828}
   - component: {fileID: 5434673287292190365}
   m_Layer: 0
-  m_Name: DownTeethRightIncisor.2
+  m_Name: DownTeethLeftIncisor.2
   m_TagString: Incisor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5891,7 +5891,7 @@ GameObject:
   - component: {fileID: 4536095027795403183}
   - component: {fileID: 5585451547868702089}
   m_Layer: 0
-  m_Name: UpTeethLeftPremolar.2
+  m_Name: UpTeethRightPremolar.2
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5924,7 +5924,7 @@ GameObject:
   - component: {fileID: 4066684996120829621}
   - component: {fileID: 5629938268077247398}
   m_Layer: 0
-  m_Name: DownTeethLeftMolar.3
+  m_Name: DownTeethRightMolar.3
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6135,7 +6135,7 @@ GameObject:
   - component: {fileID: 2210053345929067448}
   - component: {fileID: 5730679591053189189}
   m_Layer: 0
-  m_Name: UpTeethRightPremolar.1
+  m_Name: UpTeethLeftPremolar.1
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6168,7 +6168,7 @@ GameObject:
   - component: {fileID: 4801107986278319700}
   - component: {fileID: 5742628076176171089}
   m_Layer: 0
-  m_Name: DownTeethLeftCanine.1
+  m_Name: DownTeethRightCanine.1
   m_TagString: Canine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6799,7 +6799,7 @@ GameObject:
   - component: {fileID: 5994737339370421601}
   - component: {fileID: 6395410572767225348}
   m_Layer: 0
-  m_Name: UpTeethLeftMolar.3
+  m_Name: UpTeethRightMolar.3
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6840,7 +6840,7 @@ GameObject:
   - component: {fileID: 8990541700432674780}
   - component: {fileID: 6557719575176895412}
   m_Layer: 0
-  m_Name: UpTeethLeftMolar.2
+  m_Name: UpTeethRightMolar.2
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7300,7 +7300,7 @@ GameObject:
   - component: {fileID: 1720494805207792493}
   - component: {fileID: 7422153991867005742}
   m_Layer: 0
-  m_Name: DownTeethRightPremolar.1
+  m_Name: DownTeethLeftPremolar.1
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7453,7 +7453,7 @@ GameObject:
   - component: {fileID: 2731538887735913679}
   - component: {fileID: 7831362281275349664}
   m_Layer: 0
-  m_Name: UpTeethLeftPremolar.1
+  m_Name: UpTeethRightPremolar.1
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7727,7 +7727,7 @@ GameObject:
   - component: {fileID: 2740303864032104676}
   - component: {fileID: 8443781438744508331}
   m_Layer: 0
-  m_Name: UpTeethRightMolar.1
+  m_Name: UpTeethLeftMolar.1
   m_TagString: Molar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8175,7 +8175,7 @@ GameObject:
   - component: {fileID: 3972606652242404589}
   - component: {fileID: 8749697902480187919}
   m_Layer: 0
-  m_Name: UpTeethRightPremolar.2
+  m_Name: UpTeethLeftPremolar.2
   m_TagString: Premolar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8254,7 +8254,7 @@ GameObject:
   - component: {fileID: 1559226569996318556}
   - component: {fileID: 8921661141634093280}
   m_Layer: 0
-  m_Name: UpTeethLeftCanine.1
+  m_Name: UpTeethRightCanine.1
   m_TagString: Canine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
