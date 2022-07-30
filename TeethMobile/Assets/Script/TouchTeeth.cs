@@ -6,18 +6,19 @@ public class TouchTeeth : MonoBehaviour
 {
     public class Tooth
     {
-        public string _name;
+        private string _name;
         private GameObject _tooth;
         private GameObject _toothInMouth;
-        public float _kuronBoyu;
-        public float _kokBoyu;
-        public float _palatinalKokBoyu;
-        public float _kuronGenisligi;
-        public float _kuronGenisligiKole;
-        public float _kuronKalinligi;
-        public float _kuronKalinligiKole;
-        public float _mesialEgim;
-        public float _distalEgim;
+        private float _kuronBoyu;
+        private float _kokBoyu;
+        private float _bukkalKokBoyu;
+        private float _palatinalKokBoyu;
+        private float _kuronGenisligi;
+        private float _kuronGenisligiKole;
+        private float _kuronKalinligi;
+        private float _kuronKalinligiKole;
+        private float _mesialEgim;
+        private float _distalEgim;
 
         public Tooth(string _name, GameObject _tooth, GameObject _toothInMouth, float _kuronBoyu, float _kokBoyu, float _kuronGenisligi, float _kuronGenisligiKole, float _kuronKalinligi, float _kuronKalinligiKole, float _mesialEgim, float _distalEgim)
         {
@@ -33,9 +34,35 @@ public class TouchTeeth : MonoBehaviour
             this._mesialEgim = _mesialEgim;
             this._distalEgim = _distalEgim;
         }
+        public Tooth(string _name, GameObject _tooth, GameObject _toothInMouth, float _kuronBoyu, float _bukkalKokBoyu, float _palatinalKokBoyu, float _kuronGenisligi, float _kuronGenisligiKole, float _kuronKalinligi, float _kuronKalinligiKole, float _mesialEgim, float _distalEgim)
+        {
+            this._name = _name;
+            this._tooth = _tooth;
+            this._toothInMouth = _toothInMouth;
+            this._kuronBoyu = _kuronBoyu;
+            this._bukkalKokBoyu = _bukkalKokBoyu;
+            this._palatinalKokBoyu = _palatinalKokBoyu;
+            this._kuronGenisligi = _kuronGenisligi;
+            this._kuronGenisligiKole = _kuronGenisligiKole;
+            this._kuronKalinligi = _kuronKalinligi;
+            this._kuronKalinligiKole = _kuronKalinligiKole;
+            this._mesialEgim = _mesialEgim;
+            this._distalEgim = _distalEgim;
+        }
 
         public GameObject GetToothInMouth() { return _toothInMouth; }
         public GameObject GetTooth() { return _tooth; }
+        public string GetName() { return _name;}
+        public float GetKuronBoyu() { return _kuronBoyu; }
+        public float GetKokBoyu() { return _kokBoyu; }
+        public float GetBukkalKokBoyu() { return _bukkalKokBoyu; }
+        public float GetPalatinalKokBoyu() { return _palatinalKokBoyu; }
+        public float GetKuronGenisligi() { return _kuronGenisligi; }
+        public float GetKuronGenisligiKole() { return _kuronGenisligiKole; }
+        public float GetKuronKalinligi() { return _kuronKalinligi; }
+        public float GetKuronKalinligiKole() { return _kuronKalinligiKole; }
+        public float GetMesialEgim() { return _mesialEgim; }
+        public float GetDistalEgim() { return _distalEgim; }
     }
     Animator mouthanimator, kameraanimator;
     Camera kamera;
@@ -68,8 +95,8 @@ public class TouchTeeth : MonoBehaviour
         Teeth.Add(new Tooth("Sol Alt 3. Molar", GameObject.Find("d1"), GameObject.Find("DownTeethLeftMolar.1"), 7f, 11f, 10f, 7.5f, 9.5f, 9f, 1f, 0f));
 
         Teeth.Add(new Tooth("Sağ Üst 3. Molar", GameObject.Find("u16"), GameObject.Find("UpTeethRightMolar.1"), 6f, 11f, 8.5f, 6.5f, 10f, 9.5f, 1f, 0f)); // sağ üst 3. molar
-        Teeth.Add(new Tooth("Sağ Üst 2. Molar", GameObject.Find("u15"), GameObject.Find("UpTeethRightMolar.2"), 7f, 11f, 9f, 7f, 11f, 10f, 1f, 0.1f)); //sağ üst 2. molar
-        Teeth.Add(new Tooth("Sağ Üst 1. Molar", GameObject.Find("u14"), GameObject.Find("UpTeethRightMolar.3"), 7.5f, 12f, 10f, 8f, 11f, 10f, 1f, 0.1f)); //sağ üst 1. molar
+        Teeth.Add(new Tooth("Sağ Üst 2. Molar", GameObject.Find("u15"), GameObject.Find("UpTeethRightMolar.2"), 7f, 11f, 12f, 9f, 7f, 11f, 10f, 1f, 0.1f)); //sağ üst 2. molar
+        Teeth.Add(new Tooth("Sağ Üst 1. Molar", GameObject.Find("u14"), GameObject.Find("UpTeethRightMolar.3"), 7.5f, 12f, 13f, 10f, 8f, 11f, 10f, 1f, 0.1f)); //sağ üst 1. molar
         Teeth.Add(new Tooth("Sağ Üst 2. Premolar", GameObject.Find("u13"), GameObject.Find("UpTeethRightPremolar.1"), 8.2f, 14f, 7f, 5f, 9f, 8f, 1f, 0.1f)); //sağ üst 2. premolar
         Teeth.Add(new Tooth("Sağ Üst 1. Premolar", GameObject.Find("u12"), GameObject.Find("UpTeethRightPremolar.2"), 8.5f, 14f, 7f, 5f, 9f, 8f, 1f, 0.2f)); //sağ üst 1. premolar
         Teeth.Add(new Tooth("Sağ Üst Kanin", GameObject.Find("u11"), GameObject.Find("UpTeethRightCanine.1"), 10f, 17f, 7.5f, 5.5f, 8f, 7f, 2.5f, 1.5f)); //sağ üst kanin
@@ -80,14 +107,9 @@ public class TouchTeeth : MonoBehaviour
         Teeth.Add(new Tooth("Sol Üst Kanin", GameObject.Find("u6"), GameObject.Find("UpTeethLeftCanine.1"), 10f, 17f, 7.5f, 5.5f, 8f, 7f, 2.5f, 1.5f)); //sol üst kanin
         Teeth.Add(new Tooth("Sol Üst 1. Premolar", GameObject.Find("u5"), GameObject.Find("UpTeethLeftPremolar.2"), 8.5f, 14f, 7f, 5f, 9f, 8f, 1f, 0.2f)); // sol üst 1. premolar
         Teeth.Add(new Tooth("Sol Üst 2. Premolar", GameObject.Find("u4"), GameObject.Find("UpTeethLeftPremolar.1"), 8.2f, 14f, 7f, 5f, 9f, 8f, 1f, 0.1f)); //sol üst 2. premolar
-        Teeth.Add(new Tooth("Sol Üst 1. Molar", GameObject.Find("u3"), GameObject.Find("UpTeethLeftMolar.3"), 7.5f, 12f, 10f, 8f, 11f, 10f, 1f, 0.1f)); //sol üst 1. molar
-        Teeth.Add(new Tooth("Sol Üst 2. Molar", GameObject.Find("u2"), GameObject.Find("UpTeethLeftMolar.2"), 7f, 11f, 9f, 7f, 11f, 10f, 1f, 0.1f)); //sol üst 2. molar
+        Teeth.Add(new Tooth("Sol Üst 1. Molar", GameObject.Find("u3"), GameObject.Find("UpTeethLeftMolar.3"), 7.5f, 12f, 13f, 10f, 8f, 11f, 10f, 1f, 0.1f)); //sol üst 1. molar
+        Teeth.Add(new Tooth("Sol Üst 2. Molar", GameObject.Find("u2"), GameObject.Find("UpTeethLeftMolar.2"), 7f, 11f, 9f, 12f, 7f, 11f, 10f, 1f, 0.1f)); //sol üst 2. molar
         Teeth.Add(new Tooth("Sol Üst 3. Molar", GameObject.Find("u1"), GameObject.Find("UpTeethLeftMolar.1"), 6f, 11f, 8.5f, 6.5f, 10f, 9.5f, 1f, 0)); //sol üst 3. molar
-
-        Teeth[17]._palatinalKokBoyu = 12f;
-        Teeth[18]._palatinalKokBoyu = 13f;
-        Teeth[29]._palatinalKokBoyu = 13f;
-        Teeth[30]._palatinalKokBoyu = 12f;
 
         kokluDis.SetActive(false);
         OpenMouth();
@@ -122,16 +144,15 @@ public class TouchTeeth : MonoBehaviour
 
                         if (dokunulanNesne.collider.gameObject == Teeth[i].GetToothInMouth())
                         {
-                            //Debug.Log(Teeth[i].GetToothInMouth().name);
                             Teeth[i].GetTooth().SetActive(true);
                             displaybutton.SetActive(true);
                             dokunulanNesne.transform.GetComponent<Renderer>().material = highlightMaterial;
-                            title.GetComponent<TMPro.TextMeshProUGUI>().text = Teeth[i]._name;
-                            if (Teeth[i]._palatinalKokBoyu != 0f){
-                                description.GetComponent<TMPro.TextMeshProUGUI>().text = "Kuron Boyu : " + Teeth[i]._kuronBoyu + "mm\nBukkal Kök Boyu : " + Teeth[i]._kokBoyu + "mm\nPalatinal Kök Boyu : " + Teeth[i]._palatinalKokBoyu + "mm\nKuron Genişliği : " + Teeth[i]._kuronGenisligi + "mm\nKuron Genişliği (Kolede) : " + Teeth[i]._kuronGenisligiKole + "mm\nKuron Kalınlığı : " + Teeth[i]._kuronKalinligi + "mm\nKuron Kalınlığı (Kolede) : " + Teeth[i]._kuronKalinligiKole + "mm\nServikal Çizgisi Mesial Eğim : " + Teeth[i]._mesialEgim + "mm\nServikal Çizgisi Distal Eğim : " + Teeth[i]._distalEgim+"mm";
+                            title.GetComponent<TMPro.TextMeshProUGUI>().text = Teeth[i].GetName();
+                            if (Teeth[i].GetPalatinalKokBoyu() != 0f){
+                                description.GetComponent<TMPro.TextMeshProUGUI>().text = "Kuron Boyu : " + Teeth[i].GetKuronBoyu() + "mm\nBukkal Kök Boyu : " + Teeth[i].GetBukkalKokBoyu() + "mm\nPalatinal Kök Boyu : " + Teeth[i].GetPalatinalKokBoyu() + "mm\nKuron Genişliği : " + Teeth[i].GetKuronGenisligi() + "mm\nKuron Genişliği (Kolede) : " + Teeth[i].GetKuronGenisligiKole() + "mm\nKuron Kalınlığı : " + Teeth[i].GetKuronKalinligi() + "mm\nKuron Kalınlığı (Kolede) : " + Teeth[i].GetKuronKalinligiKole() + "mm\nServikal Çizgisi Mesial Eğim : " + Teeth[i].GetMesialEgim() + "mm\nServikal Çizgisi Distal Eğim : " + Teeth[i].GetDistalEgim()+"mm";
                             }
                             else{
-                                description.GetComponent<TMPro.TextMeshProUGUI>().text = "Kuron Boyu : " + Teeth[i]._kuronBoyu + "mm\nKök Boyu : " + Teeth[i]._kokBoyu + "mm\nKuron Genişliği : " + Teeth[i]._kuronGenisligi + "mm\nKuron Genişliği (Kolede) : " + Teeth[i]._kuronGenisligiKole + "mm\nKuron Kalınlığı : " + Teeth[i]._kuronKalinligi + "mm\nKuron Kalınlığı (Kolede) : " + Teeth[i]._kuronKalinligiKole + "mm\nServikal Çizgisi Mesial Eğim : " + Teeth[i]._mesialEgim + "mm\nServikal Çizgisi Distal Eğim : " + Teeth[i]._distalEgim+"mm";
+                                description.GetComponent<TMPro.TextMeshProUGUI>().text = "Kuron Boyu : " + Teeth[i].GetKuronBoyu() + "mm\nKök Boyu : " + Teeth[i].GetKokBoyu() + "mm\nKuron Genişliği : " + Teeth[i].GetKuronGenisligi() + "mm\nKuron Genişliği (Kolede) : " + Teeth[i].GetKuronGenisligiKole() + "mm\nKuron Kalınlığı : " + Teeth[i].GetKuronKalinligi() + "mm\nKuron Kalınlığı (Kolede) : " + Teeth[i].GetKuronKalinligiKole() + "mm\nServikal Çizgisi Mesial Eğim : " + Teeth[i].GetMesialEgim() + "mm\nServikal Çizgisi Distal Eğim : " + Teeth[i].GetDistalEgim()+"mm";
                             }
                         }
                     }
